@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1b2838;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #171a21;
+    padding: 10px 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); 
+}
+
+.logo img {
+    width: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end; 
+    flex-grow: 1;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.filter-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.filter-button {
+    background-color: #2a475e;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.filter-content {
+    display: none;
+    position: absolute;
+    background-color: #95226d;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.filter-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.filter-content a:hover {
+    background-color: #8a1edc;
+}
+
+.filter-dropdown:hover .filter-content {
+    display: block;
+}
+
+.offers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.offer {
+    background-color: #171a21;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.offer img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.highlight {
+    grid-column: span 2;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #b8b6b4;
+}
+
+.offer-item {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 40rem;
+    margin-right: 40rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #1d334e;
+}
+
+.offer-price {
+    color: rgb(207, 32, 29);
+}
+
+.registration-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #2a475e;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #ffffff;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #c6d4df;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3c5166;
+    color: #ffffff;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="url"]::placeholder {
+    color: #8f98a0;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.game-details {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #2a475e;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.game-image {
+    max-width: 100%;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+.game-description, .game-info {
+    margin: 15px 0;
+    text-align: left;
+}
+
+button.play-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #173ebd;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button.play-button:hover {
+    background-color: #45a049;
+}
